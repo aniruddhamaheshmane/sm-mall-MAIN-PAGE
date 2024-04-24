@@ -5,20 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .all_product{
-border: 4px solid;
-padding: 10px;
-display: flex;
-height: 1000px;
-        }
+      
 
         .div_all_product{
-         display: flex;
-            height: 100pxpx;
+            display: flex;
+            height: 100px;
             padding: 10px;
             border: 3px solid black;
             margin: 10px;
-            display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 1000;
@@ -26,16 +20,17 @@ height: 1000px;
             background-color: rgb(236, 178, 178);
 
         }
-        .div_all_product>div>div{
-            background-color:rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            border: 2px solid rgb(255, 0, 0);
-            gap: 5px;
-            margin: 10px;
-            padding: 4px;
-            align-items: center;
-            text-align: center;
-        }
+    
+
+      .btn{
+        height: 30px;
+        width: 30vh;
+        margin: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-weight: 1000;
+      }
+     
 
         #main_heding{
             height: 50px;
@@ -77,7 +72,7 @@ color: rgb(255, 255, 255);
     </style>
 </head>
 <body>
-    <div id="main_heding">सह्याद्री कलेक्शन</div>
+    <!-- <div id="main_heding">सह्याद्री कलेक्शन</div> -->
     <marquee behavior="" direction="">
         <div id="marquee_flex_line">
 
@@ -105,22 +100,60 @@ color: rgb(255, 255, 255);
     <div id="all_product_heding">All product</div>
     <div class="div_all_product">
         <div>
-            <div is="man">Men</div>
-            <div id="Women">Women</div>
+            <div>
+                <a href="https://aniruddhamaheshmane.github.io/sm-mall/">                <button id="man" class="btn">  <div >Men</div></button>
+                </a>
+            </div>
+            <div>
+                <button class="btn" id="Women">Women</button>
+            </div>
+
+           
         </div>
 <div>
-    <div id="Baby_&_Kids">Baby & Kids</div>
-    <div id="Home_&_Furniture">Home & Furniture</div>
-</div>
-
-</div>
-  
- 
-        
-
-          
-
-    
+    <div>  
+         
+         <button class="btn" id="Baby_&_Kids">Baby & Kids</button>
     </div>
+
+    <div>
+        <button class="btn" id="Home_&_Furniture">Home & Furniture</button>
+
+    </div>
+</div>
+
+</div>
+      
+    </div>
+    <script>
+let btn_btn_1 = document.getElementById("man");
+let btn_btn_2 = document.getElementById("Baby_&_Kids");
+let btn_btn_3 = document.getElementById("Women");
+let btn_btn_4 = document.getElementById("Home_&_Furniture");
+      setInterval(() => {
+
+      btn_btn_1.style.backgroundColor = "white";
+      btn_btn_1.style.color = "black";
+      btn_btn_2.style.backgroundColor = "white";
+      btn_btn_2.style.color = "black";
+      btn_btn_3.style.backgroundColor = "white";
+      btn_btn_3.style.color = "black";
+      btn_btn_4.style.backgroundColor = "white";
+      btn_btn_4.style.color = "black";
+     
+      }, 1000);
+
+      setInterval(() => {
+btn_btn_1.style.backgroundColor = "black";
+btn_btn_1.style.color = "white";
+btn_btn_2.style.backgroundColor = "black";
+btn_btn_2.style.color = "white";
+btn_btn_3.style.backgroundColor = "black";
+btn_btn_3.style.color = "white";
+btn_btn_4.style.backgroundColor = "black";
+btn_btn_4.style.color = "white";
+
+      }, 2000);
+    </script>
 </body>
 </html>
